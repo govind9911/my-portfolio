@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1120;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111a2e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+section {
+    padding: 80px 8%;
+    min-height: 70vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #00e5ff;
+}
+
+.home p {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #00e5ff;
+    color: #07111e;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.profile {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00e5ff, #635bff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    margin: 20px;
+}
+
+h2 {
+    color: #00e5ff;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #162238;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #00e5ff55;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+.card h4 {
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #bbb;
+}
+
+.contact {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    background: #162238;
+    color: white;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111a2e;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div>
+        <p>Hello, Welcome to my Portfolio</p>
+        <h1>I'm <span id="name">Govind</span></h1>
+        <h3>Frontend Web Developer</h3>
+        <p>I create beautiful and responsive websites<br>
+        using HTML, CSS and JavaScript.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <div class="profile">👨‍💻</div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! My name is Govind. I am a passionate
+        web developer. I love creating modern websites
+        and learning new technologies. My goal is to
+        become a professional developer.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Web Structure</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Web Designing</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Web Interactivity</p>
+        </div>
+        <div class="card">
+            <h3>MS Word</h3>
+            <p>Document Edit</p>
+            
+        </div>
+        <div class="card">
+            <h4>Power point</h4>
+            <p>Preparing presentation</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>My personal portfolio website.</p>
+        </div>
+        <div class="card">
+            <h3>Calculator</h3>
+            <p>A simple calculator using JavaScript.</p>
+        </div>
+      
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" id="userName"
+        placeholder="Your Name" required>
+
+        <input type="email" id="email"
+        placeholder="Your Email" required>
+
+        <textarea id="message"
+        placeholder="Your Message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("userName").value;
+
+    alert("Thank you " + name + "! Your message is ready.");
+
+    form.reset();
+});
+
+</script>
+
+</body>
+</html>
